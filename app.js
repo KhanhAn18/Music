@@ -275,3 +275,11 @@ function clicked(index){
     playLiMusic();
 }
 
+// Sử dụng sự kiện onselectstart để ngăn chặn việc chọn văn bản
+document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+});
+// Sử dụng sự kiện contextmenu để ngăn chặn hiển thị menu ngữ cảnh khi chuột phải
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
